@@ -1,0 +1,171 @@
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    color: #481f00;
+}
+
+header {
+    background-color: rgb(218, 175, 119);
+    padding: 20px;
+    text-align: center;
+    color: #481f00;
+}
+
+header a {
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    background-color: #fff;
+    margin: 0 5px;
+    border-radius: 50%;
+}
+
+section {
+    margin: 20px;
+}
+
+h2 {
+    color: #8ce7e7;
+    text-align: center;
+}
+
+img {
+    width: 100%;
+    max-width: 500px;
+    height: auto;
+    border-radius: 20px;
+    margin: 20px 0;
+}
+.cartas,
+.foto2,
+.foto3,
+.foto4,
+.foto5,
+.foto6,
+.foto7 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+.cartas img,
+.foto2 img,
+.foto3 img,
+.foto4 img,
+.foto5 img,
+.foto6 img,
+.foto7 img {
+    width: 100%;
+    max-width: 500px;
+    height: auto;
+    border-radius: 20px;
+    margin: 20px 0;
+}
+
+.fotos-ao-lado {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    margin-top: 20px;
+}
+
+.fotos-ao-lado img {
+    width: calc(33.33% - 20px);
+    height: auto;
+    border-radius: 20px;
+    transition: transform 0.3s ease-in-out;
+}
+
+.fotos-ao-lado img:hover {
+    transform: scale(1.1);
+}
+
+footer {
+    background-color: rgb(218, 175, 119);
+    padding: 20px;
+    text-align: center;
+    color: #481f00;
+}
+
+footer img {
+    border-radius: 50%;
+    max-width: 50px;
+    max-height: 50px;
+}
+
+footer h2 {
+    color: #fff;
+    margin-top: 10px;
+}
+
+p {
+    font-size: 20px;
+    text-align: center;
+    margin: 0 20px;
+}
+.cartas img {
+    margin: 0 auto; /* Adiciona margem automática para centralizar a imagem */
+}
+
+.cartas .desc-foto1 {
+    text-align: justify; /* Alinha o texto justificado, similar às outras descrições */
+    font-size: 16px; /* Define o tamanho da fonte para consistência */
+    margin: 20px 0; /* Adiciona margem para espaçamento inferior */
+}
+
+
+@media screen and (max-width: 768px) {
+    header {
+        padding: 10px;
+    }
+
+    header a {
+        width: 15px;
+        height: 15px;
+        margin: 0 3px;
+    }
+
+    h2 {
+        font-size: 24px;
+    }
+
+    img {
+        max-width: 100%;
+        border-radius: 10px;
+    }
+
+    .fotos-ao-lado img {
+        width: calc(50% - 10px);
+    }
+
+    footer {
+        padding: 10px;
+    }
+
+    footer img {
+        max-width: 30px;
+        max-height: 30px;
+    }
+
+    footer h2 {
+        margin-top: 5px;
+    }
+
+    p {
+        font-size: 18px;
+    }
+
+    .cartas .desc-foto1 {
+        font-size: 14px;
+        margin: 10px 0;
+    }
+    .fotos-ao-lado img {
+        width: 100%;
+        max-width: calc(33.33% - 20px);
+        height: auto;
+        border-radius: 20px;
+        transition: transform 0.3s ease-in-out;
+    }
+}
